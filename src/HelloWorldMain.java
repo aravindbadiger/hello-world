@@ -10,6 +10,8 @@ import com.ab.trainings.helloworld.classes.SayHelloWorldImpl;
  */
 public class HelloWorldMain {
 
+	private static SayHelloWorldImpl shw;
+	
 	/**
 	 * 
 	 */
@@ -22,8 +24,22 @@ public class HelloWorldMain {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SayHelloWorldImpl shw = new SayHelloWorldImpl();
-		System.out.println(shw.SayHelloWorld());
+		setShw(new SayHelloWorldImpl());
+		System.out.println(getShw().SayHelloWorld());
+	}
+
+	/**
+	 * @return the shw
+	 */
+	public static SayHelloWorldImpl getShw() {
+		return shw;
+	}
+
+	/**
+	 * @param shw the shw to set
+	 */
+	public static void setShw(SayHelloWorldImpl shw) {
+		HelloWorldMain.shw = shw;
 	}
 
 }
