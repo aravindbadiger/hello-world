@@ -13,5 +13,10 @@ public interface SayHelloWorldInterface {
 	 * 
 	 * @return
 	 */
-	public String SayHelloWorld();
+	public String sayHelloWorld();
+	
+	/**
+	 * 
+	 */
+	public void checkGreetings();
 }
