@@ -21,9 +21,17 @@ public class SayHelloWorldImpl implements SayHelloWorldInterface {
 	/* (non-Javadoc)
 	 * @see com.ab.trainings.helloworld.interfaces.SayHelloWorldInterface#SayHelloWorld()
 	 */
-	public String SayHelloWorld() {
+	public String sayHelloWorld() {
 		// TODO Auto-generated method stub
 		return "Hello World";
+	}
+	
+	/**
+	 * 
+	 */
+	public void checkGreetings() {
+		
+		
 	}
 
 }
